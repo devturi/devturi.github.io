@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Mr-Resume Documentation </title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Mr-Resume&rdquo; Documentation by &ldquo;userthemes &rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Mr-Resume&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 12/05/2015<br>
+					By: userthemes<br>
+					Email: <a href="mailto:userthemes@gmail.com">userthemes@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/userthemes">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript/Jquery</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This HTML Template is a 100% responsive layout. All of the information within the main content area is nested within a div with an class of "layout". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#primaryContent a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using the following CSS files in this HTML Template. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	/* === Header Section === */
+
+	
+    /*****
+        1  - General code					|||		Line No : 11
+        2  - Common Code 					|||		Line No : 54
+        3  - Index, Index 1, Index 2 				|||		Line No : 208
+        4  - Index 3						|||		Line No : 400
+        5  - Index 4						|||		Line No : 600
+        6  - Index 5						|||		Line No : 1020
+        7  - Inner Header					|||		Line No : 1251
+        8  - Blog 						|||		Line No : 1324
+        9  - Contact Form					|||		Line No : 1424
+        10 - portfolio 						|||		Line No : 1500
+        11 - Isotopes						|||		Line No : 1553
+        12 - About us 						|||		Line No : 1580
+        13 - Responsive Menu					|||		Line No : 1610
+        14 - Profile				 		|||		Line No : 1634
+        15 - Bottom Information Shortcode			|||		Line No : 1974
+        16 - copyright						|||		Line No : 2007
+        17 - Demo Panel						|||		Line No : 2025
+                 
+	******/
+    
+    <p> The Following CSS Files are included in this HTML Template </p>
+    
+    1 - bootstrap.min.css
+    2 - font-awesome.min.css
+    3 - jquery.mCustomScrollbar.css
+    4 - owl.carousel.css
+    5 - prettyPhoto.css
+    6 - responsive.css
+    7 - style.css
+    8 - themify-icons.css
+    
+    
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This HTML Template imports Seven Javascript files.</p>
+			
+		<ol>
+			<li>jquery2.1.1.js</li>
+			<li>app.js</li>
+            <li>bootstrap.min.js</li>
+            <li>jquery.isotope.js</li>
+            <li>jquery.mCustomScrollbar.js</li>
+            <li>jquery.prettyPhoto.js</li>
+            <li>owl.carousel.min.js</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>App.js file is a plugin used for fun facts. 
+            <pre>	
+            	$('#circle-one').circliful();
+                $('#circle-two').circliful();
+                $('#circle-three').circliful();
+                $('#circle-four').circliful();
+            </pre>
+			</li>
+            <li>
+            	"bootstrap.min.js" is a minified file of framework powered by Twitter.
+            </li>
+            <li>
+            	"jquery.isotope.js" file is used for masonary style of portfolio.
+                <pre>
+                	$(window).load(function(){
+                        var $container = $('.portfolio-wrapper');
+                        $container.isotope({
+                        filter: '*',
+                        animationOptions: {
+                            duration: 750,
+                            easing: 'linear',
+                            queue: false
+                        }
+                    });
+                </pre>
+            </li>
+            <li>
+            	"jquery.mCustomScrollbar.js" file is used for custom scroll bar. We used these file to show our demos's windows scrollbar in this template
+                <pre>
+                	(function($){
+                        $(window).load(function(){
+                            $(".styles-list").mCustomScrollbar();
+                        });
+                    })(jQuery);
+                </pre>
+            </li>
+            <li>
+            	"jquery.prettyPhoto.js" file is used for portfolio category selection. 
+                <pre>
+                	$('.portfolioFilter ul li a').click(function(){
+                        $('.portfolioFilter .current').removeClass('current');
+                        $(this).addClass('current');
+                 
+                            var selector = $(this).attr('data-filter');
+                            $container.isotope({
+                                filter: selector,
+                                animationOptions: {
+                                    duration: 750,
+                                    easing: 'linear',
+                                    queue: false
+                                }
+                             });
+                             return false;
+                        });
+                    })
+                </pre>
+            </li>
+            <li>
+            	"owl.carousel.min.js" file is used for carousel. It consists some library for carousel. we just include this file and initialized with the following code.
+                <pre>
+                	$(".work-carousel").owlCarousel({
+                        margin:30,
+                        singleItem:true,
+                        items: 1,
+                        nav: false,
+                        autoplay:true,
+                        autoplayTimeout:3000,
+                        smartSpeed:2000,
+                        loop:true,
+                        dots:false,
+                        responsive:{
+                            0	:{	items:1	},
+                            480	:{ 	items:1 },
+                            768	:{ 	items:1 },
+                            1200:{ 	items:1 },
+                        }
+                    });
+                </pre>
+            </li>
+		</ol>
+		
+		<hr>
+	
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>userthemes</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
